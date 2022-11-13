@@ -1,0 +1,239 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(Ubuntu.ttf);
+}
+
+
+    ul {
+        width: min(95%, 70rem);
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+        margin-inline: auto;
+        font-family: "Ubuntu";
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 0 6rem;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: "Ubuntu";
+      }
+      
+      li a:hover {
+        color: blue;
+      }
+
+
+body{ 
+    display: grid;
+    font-family: "Ubuntu";
+}
+
+main{
+    display: grid;
+    background-color: white;
+    width: min(95%, 70rem);
+    font-family: "Ubuntu";
+
+}
+
+image{
+    max-width: 30vh;
+    display: block;
+}
+
+
+h1{
+    font-size: 2.5rem;
+    font-family: "Ubuntu";
+}
+
+p{
+    font-size: 1.20rem;
+    color: rgba(52, 52, 52, 0.964);
+    font-family: "Ubuntu";
+}
+
+span{ color: tomato;}
+
+.baton{
+    background-color: rgba(33, 33, 247, 0.962);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.75rem;
+    cursor: pointer;
+    border-radius: .60rem;
+    padding: 0.50rem 1rem 0.70rem 1rem;
+    font-family: "Ubuntu";
+    
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.20);
+}
+
+.baton:hover {
+    background-color: red;
+    box-shadow: 10px 10px 30px rgba(255, 0, 0, 0.268);
+    font-family: "Ubuntu";
+}
+
+
+
+.grid-abba{ 
+    display: grid;
+    gap: 0.50rem;
+    font-family: "Ubuntu";
+    margin-inline:auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0px 70vh 65vh 70vh 35vh 1rem;
+
+}
+
+
+
+
+.navbar{
+    grid-area: 1 / 1 / 2 / 7;
+}
+
+.intro-one{
+    grid-area: 2 / 1 / 3 / 4;
+    font-family: "Ubuntu";
+
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.image-one{
+    grid-area: 2 / 4 / 3 / 7;
+    background-color: white;
+    margin-top: auto;
+}
+
+.image-two{
+    grid-area: 3 / 1 / 4 / 4;
+    background-color: white;
+    margin-top: none;
+}
+
+.intro-two{
+    grid-area: 3 / 4 / 4 / 7;
+    background-color: white;
+    font-family: "Ubuntu";
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.card-text{
+    grid-area: 4 / 1 / 5 / 7;
+    text-align: center;
+    display: box;
+    font-family: "Ubuntu";
+    padding: 1.5rem;
+}
+
+.card img{
+    max-width: 100%;
+    display: box;
+    font-family: "Ubuntu";
+    margin: auto;
+    padding: auto;
+}
+
+.card p{
+    font-size: 0.80rem;
+    font-family: "Ubuntu";
+    color: rgb(66, 66, 66);
+}
+
+.card{
+    background-color: rgba(211, 211, 211, 0.293);
+    font-family: "Ubuntu";
+
+}
+
+.card-one{
+    grid-area: 4 / 1 / 5 / 3;
+    border-radius: 1rem;
+    margin: 7rem 1rem 2rem 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+    max-height: 45vh;
+    background-color: white;
+    font-family: "Ubuntu";
+}
+
+.card-two{
+    grid-area: 4 / 3 / 5 / 5;
+    border-radius: 1rem;
+    margin: 7rem 1rem 2rem 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+    max-height: 45vh;
+    background-color: white;
+    font-family: "Ubuntu";
+}
+
+.card-three{
+    grid-area: 4 / 5 / 5 / 7;
+    border-radius: 1rem;
+    margin: 7rem 1rem 2rem 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+    max-height: 45vh;
+    background-color: white;
+    font-family: "Ubuntu";
+}
+
+.join-us{
+    grid-area: 5 / 3 / 6 / 5;
+    margin-top: 2rem;
+    font-family: "Ubuntu";
+    text-align: center;
+    
+}
+
+.last-stuff {
+    text-align: center;
+    font-family: "Ubuntu";
+    margin: 4rem;
+}
+
+.last-stuff h4 {color: rgb(74, 74, 74);
+    font-family: "Ubuntu";}
+.last-stuff p { color: black; font-size: 2rem;
+    text-align: center;
+    font-family: "Ubuntu";}
+
+
+
+
+
+.footer{
+    grid-area: 6/ 1 / 7 / 7;
+}
+
+.footer p{
+    font-size: 0.75rem;
+    color: grey;
+    text-align: center;
+    padding-bottom: 0.40rem;
+    font-family: "Ubuntu";
+}
